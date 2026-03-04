@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: 
+    "header header header"
+    "menu contenido noticias"
+    "footer footer footer";
+  height: 100vh; 
+  gap: 5px; 
+}
+
+header {
+  grid-area: header;
+  background-color: #64a1df;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.menu-lateral {
+  grid-area: menu;
+  background-color: #96b0d6;
+}
+
+nav ul { list-style: none; padding: 0; }
+a { color: inherit; text-decoration: none; display: block; padding: 10px; }
+
+main {
+  grid-area: contenido;
+  background-color: #d1e1f8;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.grid-superposicion {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 200px 200px;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.celda-especial {
+  grid-row: 1;
+  grid-column: 1;
+  display: grid; 
+  position: relative;
+  border: 2px solid #2c3e50;
+}
+
+.imagen-capa {
+  grid-row: 1;
+  grid-column: 1;
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  z-index: 1; 
+}
+
+.texto-capa {
+  grid-row: 1;
+  grid-column: 1;
+  z-index: 2; /* Capa superior (Superposición) */
+  align-self: center; /* Centrado vertical */
+  justify-self: center; /* Centrado horizontal */
+  background-color: rgba(255, 255, 255, 0.7); /* Fondo semi-transparente para lectura */
+  padding: 10px;
+  font-weight: bold;
+}
+
+.celda-vacia {
+  background-color: #96b0d6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --- ESTILOS FINALES --- */
+.barra-noticias {
+  grid-area: noticias;
+  background-color: #96b0d6;
+  text-align: center;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+}
