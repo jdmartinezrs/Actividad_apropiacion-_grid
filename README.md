@@ -1,7 +1,27 @@
 Actividades de apropiación del conocimiento.
->
 
-punto2
+** Juan Manuel **
+1) Creando tu primera cuadrícula
+Aplicar las propiedades básicas del contenedor Grid para organizar elementos.
+Actividad:
+• Crea un archivo HTML con seis elementos dentro de un contenedor.
+
+• Aplica display: grid y define tres columnas y dos filas usando grid-template-columns y grid-
+template-rows.
+
+• Modifica las medidas y observa cómo cambia la distribución.
+Pregunta
+¿Cómo influye el tamaño de las columnas o filas en la organización del contenido?
+
+**FERMIN ** 
+2) Diseño de plantilla informativa con áreas
+aplicar grid-template-areas para definir zonas del diseño.
+Actividad:
+• Diseña una plantilla con las siguientes secciones: encabezado, menú lateral, contenido
+principal, barra de noticias y pie de página.
+• Utiliza nombres de áreas para organizar visualmente el contenido.
+• Agrega colores de fondo para identificar cada zona.
+Pregunta
 ¿De qué manera el uso de áreas facilita la comprensión del diseño para otros desarrolladores?
 RTA: ayuda a facilitar la lectura del codigo siendo intutiva esto ayuda que no tengan que calcular coordenadas para saber donde se colocara cada contenedor , con el uso de grid se facilita esta tarea y se entiende siendo flexible y moldiable manteniendo un orden logico en el html
 
