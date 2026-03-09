@@ -1,9 +1,11 @@
-#actividad-1{
-  min-height: 100vh;
-  width: 100%;
+
+body{
+  margin:0;
 }
-body {
-  margin: 0;
+
+
+#puntos-2-5{
+   margin: 0;
   display: grid;
   grid-template-columns: 200px 1fr 200px;
   grid-template-rows: auto 1fr auto;
@@ -15,16 +17,17 @@ body {
   gap: 5px; 
 }
 
+
 header {
   grid-area: header;
-  background-color: #64a1df;
-  color: rgb(0, 0, 0);
+  background-color: var(--color-principal);
+  color: var(--positive-text-color);
   text-align: center;
 }
 
 .menu-lateral {
   grid-area: menu;
-  background-color: #96b0d6;
+  background-color:var(--color-secundario);
 }
 
 nav ul { list-style: none; padding: 0; }
@@ -32,11 +35,24 @@ a { color: inherit; text-decoration: none; display: block; padding: 10px; }
 
 main {
   grid-area: contenido;
-  background-color: #d1e1f8;
+  background-color: var(--color-fondo);
   padding: 20px;
   text-align: center;
 }
 
+/* --- ESTILOS FINALES --- */
+.barra-noticias {
+  grid-area: noticias;
+  background-color: var(--color-secundario);
+  text-align: center;
+}
+
+footer {
+  grid-area: footer;
+  background-color: var(--dark-aditional-color);
+  color: var(--negative-text-color);
+  text-align: center;
+}
 
 .grid-superposicion {
   display: grid;
@@ -52,7 +68,7 @@ main {
   grid-column: 1;
   display: grid; 
   position: relative;
-  border: 2px solid #2c3e50;
+  border: 2px solid var(--dark-aditional-color);
 }
 
 .imagen-capa {
@@ -70,28 +86,15 @@ main {
   z-index: 2; /* Capa superior (Superposición) */
   align-self: center; /* Centrado vertical */
   justify-self: center; /* Centrado horizontal */
-  background-color: rgba(255, 255, 255, 0.7); /* Fondo semi-transparente para lectura */
+  background-color:var(--semi-transparente);/* Fondo semi-transparente para lectura */
   padding: 10px;
   font-weight: bold;
 }
 
 .celda-vacia {
-  background-color: #96b0d6;
+  background-color: var(--color-secundario);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* --- ESTILOS FINALES --- */
-.barra-noticias {
-  grid-area: noticias;
-  background-color: #96b0d6;
-  text-align: center;
-}
-
-footer {
-  grid-area: footer;
-  background-color: #2c3e50;
-  color: white;
-  text-align: center;
-}
