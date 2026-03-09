@@ -1,0 +1,25 @@
+#punto3{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+grid-template-rows:repeat(2,150px);
+gap:10px;
+height: 100vh;
+background-color: var(--color-fondo);
+padding: 5px;
+}
+
+#punto3 div{
+
+background:var(--color-secundario);
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+
+#punto3 .punto3__implicita{
+    background-color: var(--color-principal);
+     border: 2px solid var(--dark-aditional-color);
+}
+
+
