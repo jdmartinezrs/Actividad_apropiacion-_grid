@@ -23,6 +23,7 @@ principal, barra de noticias y pie de página.
 • Agrega colores de fondo para identificar cada zona.
 Pregunta
 ¿De qué manera el uso de áreas facilita la comprensión del diseño para otros desarrolladores?
+RTA: ayuda a facilitar la lectura del codigo siendo intutiva esto ayuda que no tengan que calcular coordenadas para saber donde se colocara cada contenedor , con el uso de grid se facilita esta tarea y se entiende siendo flexible y moldiable manteniendo un orden logico en el html
 
 **JUAN DAVID MARTINEZ ROJAS **
 3) Cuadrícula implícita y explícita
@@ -33,6 +34,7 @@ Actividad:
 • Agrega bordes o colores para visualizar los límites de cada celda.
 Pregunta
 ¿Qué ventajas y desventajas observas al permitir que CSS genere nuevas filas o columnas?
+
 4) Explorando el flujo y la densidad de la cuadrícula
 Analizar cómo varía la organización al cambiar el flujo de colocación de los ítems.
 Actividad:
